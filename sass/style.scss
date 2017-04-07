@@ -1,0 +1,18 @@
+@import "reset.scss";
+
+//  Breakpoints
+$breakpoint-small-medium: 569px;
+$breakpoint-medium-large: 819px;
+$breakpoint-medium-large: 1069px;
+
+// Palette
+$light-gray: #eeeeee;
+$med-gray: #dddddd;
+
+body {
+	background-color: $light-gray;
+
+	@media(min-width: $breakpoint-small-medium) {
+		background-color: $med-gray;
+	}
+}
